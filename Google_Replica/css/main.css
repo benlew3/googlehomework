@@ -1,0 +1,352 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html,
+body{
+    background: none repeat scroll 0 0 #fff;
+    color: #222;}
+body{
+    height: 100%;
+}
+
+* {
+    font-size: 12px;
+}
+a{
+    color: #222;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #222;
+    text-decoration: underline;
+}
+
+ul#nav {
+    float:right;
+    margin-right:25px;
+}
+
+ul#nav li{
+    list-style: none;
+    display: inline-block;
+    text-align: right;
+    font-size: 13px;
+    vertical-align: bottom;
+    padding: 1em 10px   0 0;
+    margin: 5px 5px 0 0;
+}
+
+.fa {
+    font-size: 20px;
+    vertical-align: top;
+    opacity: 0.7;
+    cursor: default;
+}
+.fa:hover{
+    opacity: 1.0;
+}
+
+span#Share {
+    cursor: default;
+    background-color: #f2f2f2;
+    padding: 7px 15px;
+}
+
+span#share:hover {
+    background-color: #E1E1E1;
+}
+
+img.profile_img{
+    border-radius:25px;
+    height: 32px;
+    margin: -5px;
+    width: 32px;
+}
+
+div#search{
+    position: absolute;
+    margin-top: 50px;
+    width: 100%;
+}
+div#search img{
+    display: block;
+    margin: 0 auto;
+    padding: 142px 0 24px 0;
+}
+input.search_button {
+    width: 40%;
+    margin-left: 30%;
+    border: 1px solid #D9D9D9;
+    font-size: 17px;
+}
+input.search_buttons:focus{
+    border-color: #4387FD;
+}
+ul.buttons{
+    text-align: center;
+    padding-left: 0;
+}
+ul.buttons li{
+    background-color: #F5F5F5;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    color: #666;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 27px;
+    margin: 17px 6px;
+    padding: 0 12px;
+    display: inline-block;
+}
+ul.buttons li:hover{
+    background-color: #F8F8F8;
+    border: 1px solid #C6C6C6;
+    box-shadow: 0 1px 1px rgba( 0, 0, 0, 0.1);
+    cursor: default;
+}
+div#bottom{
+    bottom: 0 !important;
+    position: absolute;
+    width: 100%;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    display:inline-block;   
+}
+ul#left {
+    float: left;
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+ ul#right{
+    float: right;
+    padding-right: 10px;
+    margin-bottom: 0px;
+}
+ul#left li, 
+ul#right li{
+    list-style: none;
+    display: inline;
+    line-height: 40px;
+}
+
+ul#left li a, 
+ul#right li a {
+    color: #666;
+    margin: 2px 10px 0;
+    font-size: 13px;
+    letter-spacing: 13px;
+}
+ul#right li a:first-child {
+    padding-right: 8px;
+}
+ul#left li:nth-child(2),
+ul#left li:nth-child(3){
+    margin-left: 7px;
+}
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
